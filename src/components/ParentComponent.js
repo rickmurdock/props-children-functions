@@ -20,10 +20,10 @@ export default class ParentComponent extends Component {
   handleInput = (e) => {  
     e.preventDefault();
     //set the state on input change
-    this.setState({whatToSay: this.state.whatToSay});
+    this.setState({whatToSay: e.target.value});
   }
-  // handleSubmitn(e) {
-  handleSubmitn = (e) => {
+  // handleSubmit(e) {
+  handleSubmit = (e) => {
     e.preventDefault();
     //check console to see if firing
     console.log("fired");
@@ -37,11 +37,11 @@ export default class ParentComponent extends Component {
     return (
       <div>Smart Component: I have a function, but something isn't working? I also need to pass that function to the ChildComponent.
         <div>
-          <input onChange={this.handleInput} type="text" placeholder="Say It, Don't Spray It!" />
+          <input onChange={this.handleInput} type="text" placeholder="Say It, Don't Spray It!"  />
         </div>
         <div>
-          <ChildComponent onClick={this.handleInput}/>
-          <DisplayComponent sayWhat={this.state.whatToSay} />
+          <ChildComponent onClick={this.handleSubmit}/>
+          <DisplayComponent sayWhat={this.state.whatWasSaid} />
         </div>
       </div>
     );
