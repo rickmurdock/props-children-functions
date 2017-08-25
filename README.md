@@ -49,4 +49,4 @@ The application should run without errors and you should be able to input text a
 
 ## Mockup
 
-![propsChildrenFunctions.png](propsChildrenFunctions.png)
+![propsChildrenFunctionsMockup.png](propsChildrenFunctionsMockup.png)
