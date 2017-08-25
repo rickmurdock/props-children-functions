@@ -2,6 +2,12 @@
 
 This project will provide practice in scaffolding, passing props, passing functions as props, and rendering child components.
 
+---
+
+### View the finished project: http://props-children-functions.surge.sh/
+
+---
+
 In order to get familiar with props, state, passing props to children, and rendering children components, let's fix our application. 
 
 * Use `create-react-app` to generate a new React application.
